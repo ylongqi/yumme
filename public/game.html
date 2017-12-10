@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Food Game">
+        <meta name="author" content="Small Data Lab">
+        <link rel="icon" href="webImage/logo/plateclick.png">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bitter">
+        <title>PlateClick</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="customCSS/game.css" rel="stylesheet">
+
+        <script src="jquery/jquery-1.11.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="customJS/game.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container header-cus">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">PlateClick</div>
+            </div>
+
+        </div>
+        <div class="container contact">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    Contact: <a href="http://www.cs.cornell.edu/~ylongqi" target="_blank">Longqi Yang</a> &lt;<a href="mailto:ylongqi@cs.cornell.edu?Subject=PlateClick" target="_top">ylongqi@cs.cornell.edu</a>&gt;
+                </div>
+            </div>
+        </div>
+        <div class="grey-background">
+        <div class="container">
+            <div class = "main-cus" id="ten-game">
+                <div class="row">
+                    <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lead text-center instruction" id="ten-instruction-1">Take a look at the food below and tap all that are delicious to you.</p>
+                    </div>
+                </div>
+
+                <div class="ten-image">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_1"><img src="webImage/tick.png" class="overlay-tick" id="overlay_1"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_2"><img src="webImage/tick.png" class="overlay-tick" id="overlay_2"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_3"><img src="webImage/tick.png" class="overlay-tick" id="overlay_3"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_4"><img src="webImage/tick.png" class="overlay-tick" id="overlay_4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_5"><img src="webImage/tick.png" class="overlay-tick" id="overlay_5"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_6"><img src="webImage/tick.png" class="overlay-tick" id="overlay_6"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_7"><img src="webImage/tick.png" class="overlay-tick" id="overlay_7"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_8"><img src="webImage/tick.png" class="overlay-tick" id="overlay_8"></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_9"><img src="webImage/tick.png" class="overlay-tick" id="overlay_9"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="candidate_10"><img src="webImage/tick.png" class="overlay-tick" id="overlay_10"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-center phase-1"><button type="button" class="btn btn-danger lead" id="submit-ten">Done</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-cus" id="game">
+                <div class="row">
+                    <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lead text-center instruction" id="two-instruction-1">Compare the food pair below and tap on whichever is delicious to you.</p>
+                    </div>
+                </div>
+
+                <div class="image_area">
+
+                    <div class="row img_wrapper">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img src="" class="img-thumbnail choice" id="picture_1"><img src="webImage/tick.png" class="pic-overlay-tick" id="pic_overlay_1"></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"><img src="" class="img-thumbnail choice" id="picture_2"><img src="webImage/tick.png" class="pic-overlay-tick" id="pic_overlay_2"></div>
+                    </div>
+                    <div class="row description hidden-xs">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <p class="text-center lead text-capitalize" id="name_1"></p>
+                            <img src="webImage/loading.gif" alt="loading..." class="loading">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <p class="text-center lead text-capitalize" id="name_2"></p>
+                            <img src="webImage/loading.gif" alt="loading..." class="loading">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lead text-center instruction" id="two-instruction-2">(Press on <button type="button" class="btn btn-info btn-sm btn-danger yuck">Yuck</button> if neither of them fits to your taste)</p>
+                    </div>
+                </div>
+                <br /><br />
+            </div>
+            <div class = "main-cus" id="suggestion">
+                <div class="row">
+                    <div class = "col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="lead text-center instruction">Drag each food item to a bucket below. (<span id=remainResult>20</span>/20)</p>
+                    </div>
+                </div>
+
+                <div class="twelve-image">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_1"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_2"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_3"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_5"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_6"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_7"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_8"></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_9"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_10"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_11"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_12"></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_13"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_14"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_15"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_16"></div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_17"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_18"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_19"></div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"><img src="webImage/empty.jpg" class="img-thumbnail choice phase-1" id="suggestion_20"></div>
+                    </div>
+                </div>
+                <div class='buckets container'>
+                    <div class="row">
+                        <div class="col-xs-6 text-center">
+                            <div class="item-container">
+                            </div>
+                            <p>Yummy</p>
+                        </div>
+                        <!-- <div class="col-xs-4 text-center">
+                            <div class="item-container">
+                            </div>
+                            <p>I would eat this for dinner.</p>
+                        </div> -->
+                        <div class="col-xs-6 text-center">
+                            <div class="item-container">
+                            </div>
+                            <p>No Way</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div></div>
+        <div class="container foot-cus">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="text-center">Powered by <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a> and <a target = "_blank" href='http://www.yummly.com/recipes'><img alt='Yummly' src='http://static.yummly.com/api-logo.png'/></a></p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="text-center">&copy; <a target="_blank" href="http://smalldata.io/">Small Data Lab</a>, <a target="_blank" href="http://www.connnectedexperiences.org">AOL Connected Experience Lab</a> <a target="_blank" href="http://tech.cornell.edu">@CornellTech</a></p></div>
+                </div>
+        </div>
+        <!-- /container -->
+
+    </body>
+</html>

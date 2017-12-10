@@ -1,0 +1,383 @@
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#logo{
+    display:block;
+    width:170px;
+    margin-bottom:10px;
+}
+
+.nav{
+    padding-top:10px;
+}
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+}
+
+.choice{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.choice:hover{
+  opacity:0.6;
+}
+
+.choice:active{
+  opacity:0.15;
+}
+.img-thumbnail:hover {
+  opacity: 0.6;
+}
+.img-thumbnail:active {
+  opacity:0.15;
+}
+.description{
+    margin-top: 20px;
+    margin-bottom:5px;
+}
+
+#name_1{
+    text-weight:normal;
+    font-size:18px;
+}
+
+#name_2{
+    text-weight:normal;
+    font-size:18px;
+}
+
+/*
+.yuck{
+    color:rgb(200, 0, 0);
+    font-size: 26px;
+    margin-bottom:20px;
+    margin-top:0px;
+}
+*/
+
+.yuckInstruction{
+    margin-top:12px;
+    font-size: 15px;
+}
+
+.progressbar{
+    display:inline-block;
+    width:62px;
+    margin-right:4px;
+    margin-bottom:15px;
+}
+
+.search-chart{
+    height: 150px;
+}
+
+#calories_e{
+    min-width: 310px;
+    max-width: 800px;
+    height: 400px;
+    margin-top:80px;
+}
+
+#menu{
+    width: 160px;
+}
+
+#registerbtn{
+    width: 160px;
+}
+
+.loading {
+    display:block;
+    margin:0 auto;
+}
+
+.img_wrapper.loaded img{
+    opacity: 0;
+}
+
+.img_wrapper img{
+    opacity: 1;
+
+    -webkit-transition: opacity 150ms;
+    -moz-transition: opacity 150ms;
+    -ms-transition: opacity 150ms;
+    transition: opacity 150ms;
+}
+
+.image_area{
+    display:block;
+    height:450px;
+}
+
+.surveyform{
+    margin-bottom: 10px;
+
+}
+
+#nextbtn{
+    width:120px;
+}
+
+.columnchart{
+    width:400px;
+    display:inline-block;
+    text-align: center;
+}
+
+.result-question{
+    margin-left:50px;
+    margin-top:20px;
+}
+
+.bullet-result{
+    margin-right:30px;
+}
+
+.bullet-area-result{
+    text-align: center;
+}
+
+.detail-feed{
+    display:none;
+}
+
+.evaluate{
+    display:none;
+}
+
+#again{
+    width:120px;
+}
+
+.instruction{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Bitter', serif;
+}
+
+.spidercomments{
+    margin-left:20px;
+}
+
+.button-area{
+    margin-top:30px;
+}
+
+.number-instruct{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.down-count{
+    font-size: 15px;
+    margin-top:12px;
+}
+
+#time_count{
+    font-style: italic;
+}
+
+.border-table-out{
+    padding:0;
+}
+
+.border-table{
+    border-radius: 10px;
+    border: 1px solid #a1a1a1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+.title-table{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #a1a1a1;
+}
+
+.result-img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 120px;
+}
+
+.nutrient-scale{
+    display:block;
+    height:100px;
+    width:100px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+
+}
+
+.table-element{
+    height:150px;
+}
+
+#detail-trigger{
+    font-size:16px;
+    margin-top:10px;
+    color: #2191ED;
+}
+
+.game-feed{
+    display:none;
+}
+
+#remark{
+    font-weight: bold;
+}
+
+#game{
+    display: none;
+}
+
+.twelve-image{
+    display: block;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+#submit-ten{
+    width:320px;
+    height:130px;
+    font-size: 20px;
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    //transform: translateY(-35%);
+}
+
+.phase-1{
+    height:150px;
+
+}
+
+#ten-instruction-wrapper{
+    height:20px;
+}
+
+.grey-background{
+    background-color: #ecf0f1;
+}
+
+.header-cus{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 55px;
+    font-family: 'Lobster', serif;
+    color:black;
+}
+
+.foot-cus{
+    margin-top: 40px;
+}
+
+.main-cus{
+    margin-top:30px;
+    margin-bottom: 40px;
+}
+
+.overlay-tick{
+    position: absolute;
+    top:40%;
+    left:43%;
+    width: 40px;
+    height:40px;
+    display:none;
+}
+
+.pic-overlay-tick{
+    position: absolute;
+    top:40%;
+    left:40%;
+    width: 60px;
+    height:60px;
+    display:none;
+}
+
+.contact{
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-family: 'Bitter', serif;
+}
+
+#start{
+    font-size:20px;
+    margin-top:15px;
+}
+
+.item-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  margin: 20px auto 20px auto;
+  height: 204px;
+}
+
+.item {
+    width: 33.33%;
+    float: left;
+    cursor: move;
+}
+
+.item-container + p {
+    padding-top: 20px;
+    clear: both;
+    font-size: 18px;
+}
+
+.twelve-image img {
+  cursor: move;
+}

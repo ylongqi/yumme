@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Food Game">
+        <meta name="author" content="Small Data Lab">
+        <link rel="icon" href="webImage/logo/plateclick.png">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bitter">
+        <title>PlateClick</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-slider.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="customCSS/game.css" rel="stylesheet">
+
+        <script src="jquery/jquery-1.11.2.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="bootstrap/js/bootstrap-slider.min.js"></script>
+
+        <script src="customJS/index.js"></script>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    </head>
+
+    <body>
+        <a href="http://bit.ly/plateclick">
+        <div class="container header-cus">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">PlateClick</div>
+            </div>
+
+        </div>
+            </a>
+        <div class="container contact">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    Contact: <a href="http://www.cs.cornell.edu/~ylongqi" target="_blank">Longqi Yang</a> &lt;<a href="mailto:ylongqi@cs.cornell.edu?Subject=PlateClick" target="_top">ylongqi@cs.cornell.edu</a>&gt;
+                </div>
+            </div>
+        </div>
+        <div class="grey-background">
+            <div class="container">
+                <div class="main-cus">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p class="instruction text-center">Choose the closest diet type to you: </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="btn-group btn-group-lg btn-group-justified" role="group">
+                            <div class="btn-group" role='group'>
+                                <button type="button" class="btn btn-primary">No restrictions</button>
+                            </div>
+                            <div class="btn-group" role='group'>
+                                <button type="button" class="btn btn-default">vegetarian</button>
+                            </div>
+                            <div class="btn-group" role='group'>
+                                <button type="button" class="btn btn-default">vegan</button>
+                            </div>
+                            <div class="btn-group" role='group'>
+                                <button type="button" class="btn btn-default">kosher</button>
+                            </div>
+                            <div class="btn-group" role='group'>
+                                <button type="button" class="btn btn-default">halal</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-slider">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <p class="instruction text-center">Identify your health goals: </p>
+                        </div>
+                    </div>
+                    <form class="row row-slider">
+                      <span>Calories:</span>
+                      <!-- <input type="radio" name="Calories" value="Eliminate" checked> Eliminate -->
+                      <input type="radio" name="Calories" value="0"> Reduce
+                      <input type="radio" name="Calories" value="1" checked> Maintain
+                      <input type="radio" name="Calories" value="2"> Increase
+                      <br/>
+                      <span>Protein:</span>
+                      <!-- <input type="radio" name="Protein" value="Eliminate" checked> Eliminate -->
+                      <input type="radio" name="Protein" value="0"> Reduce
+                      <input type="radio" name="Protein" value="1" checked> Maintain
+                      <input type="radio" name="Protein" value="2"> Increase
+                      <br/>
+                      <span>Fat:</span>
+                      <!-- <input type="radio" name="Fat" value="Eliminate" checked> Eliminate -->
+                      <input type="radio" name="Fat" value="0"> Reduce
+                      <input type="radio" name="Fat" value="1" checked> Maintain
+                      <input type="radio" name="Fat" value="2"> Increase
+                    </form>
+                    <div class="row row-slider">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div align="center" class="g-recaptcha" data-sitekey="6LdOMAUTAAAAAOezxJPMoIFcWRTWIxJfYly2T3Wr" data-callback="onReturnCallback"></div>
+                        </div>
+                    </div>
+                    <div class="row row-slider">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                            <button type="button" class="btn btn-danger lead" id="start">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container foot-cus">
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="text-center">Powered by <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a> and <a target = "_blank" href='http://www.yummly.com/recipes'><img alt='Yummly' src='http://static.yummly.com/api-logo.png'/></a></p></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"><p class="text-center">&copy; <a target="_blank" href="http://smalldata.io/">Small Data Lab</a>, <a target="_blank" href="http://www.connnectedexperiences.org">AOL Connected Experience Lab</a> <a target="_blank" href="http://tech.cornell.edu">@CornellTech</a></p></div>
+                </div>
+        </div>
+        <!-- /container -->
+
+    </body>
+</html>
