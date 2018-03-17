@@ -107,7 +107,7 @@ class ServerHandler():
 
     def user_register(self, uid, category, goals):
         if uid not in self.user_dict.keys():
-            self.user_dict[uid] = YadaUser(Dist_matrix_size=self.Dist_matrix_size[category], 
+            self.user_dict[uid] = YummeUser(Dist_matrix_size=self.Dist_matrix_size[category], 
                                             Iteration=15, Category=category, Goals=goals)
         return True
 
@@ -242,7 +242,7 @@ class ServerHandler():
             if cumulate > rand_num:
                 return i
 
-class YadaUser():
+class YummeUser():
 
     def __init__(self, Dist_matrix_size, Iteration, Category, Goals):
         self.max_iteration = Iteration
