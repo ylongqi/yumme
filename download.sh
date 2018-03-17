@@ -20,3 +20,16 @@ wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/vege
 wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/MainDishes_ranks.pickle -O flask_api/plateclick_data/MainDishes_ranks.pickle
 wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/halal_ranks.pickle -O flask_api/plateclick_data/halal_ranks.pickle
 wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/kosher_ranks.pickle -O flask_api/plateclick_data/kosher_ranks.pickle
+
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/vegan_pairwise_dist.pickle -O flask_api/plateclick_data/vegan_pairwise_dist.pickle
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/vegetarian_pairwise_dist.pickle -O flask_api/plateclick_data/vegetarian_pairwise_dist.pickle
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/MainDishes_pairwise_dist.pickle -O flask_api/plateclick_data/MainDishes_pairwise_dist.pickle
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/halal_pairwise_dist.pickle -O flask_api/plateclick_data/halal_pairwise_dist.pickle
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/kosher_pairwise_dist.pickle -O flask_api/plateclick_data/kosher_pairwise_dist.pickle
+
+# Nutritional information
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/vegan_nutrition.npy -O flask_api/plateclick_data/vegan_nutrition.npy
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/vegetarian_nutrition.npy -O flask_api/plateclick_data/vegetarian_nutrition.npy
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/MainDishes_nutrition.npy -O flask_api/plateclick_data/MainDishes_nutrition.npy
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/halal_nutrition.npy -O flask_api/plateclick_data/halal_nutrition.npy
+wget --no-check-certificate https://s3.amazonaws.com/cornell-tech-sdl-yumme/kosher_nutrition.npy -O flask_api/plateclick_data/kosher_nutrition.npy
