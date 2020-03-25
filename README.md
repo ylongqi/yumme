@@ -5,7 +5,9 @@ Longqi Yang, Cheng-Kang Hsieh, Hongjian Yang, JP Pollak, Nicola Dell, Serge Belo
 
 This repo contains backend and frontend implementations of the end-to-end user study. 
 
-The service is built on Flask. Execute the download.sh file to download recipe metadata and pretrained models.
+The service is built on Flask. Recipe metadata and pretrained models can be downloaded via the following link:
+
+https://drive.google.com/drive/folders/1ZxEF4I6MYlQlRIG7ihwH-Hr2Ac9CTNGS?usp=sharing
 
 For FoodDist model, please refer to: https://github.com/ylongqi/fooddist 
 
